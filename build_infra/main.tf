@@ -21,9 +21,6 @@ data "aws_iam_instance_profile" "ec2" {
   name = "EC2_role"
 }
 
-locals {
-  key_value = "capstone_1-${random_string.random.result}"
-}
 module "vpc" {
   source     = "../modules/vpc"
   name       = "Web_tier_VPC"
