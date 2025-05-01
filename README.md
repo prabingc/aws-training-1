@@ -1,7 +1,7 @@
 In this lab we are deploying a single tier web applicaiton. The resources we will be creating here is 1 public facing website backed by nginx running on a EC2 instance. EC2 instances are behind a AutoScaling which scales up and down based on CPU usage. 
 
   Tools used: 
-      Packer to install nginx on latest Amazon AMI and create a new AMI.
+      Packer for AMI creation.
       Terraform to build all the infrastructure. 
       
 
