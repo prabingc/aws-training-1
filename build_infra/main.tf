@@ -24,7 +24,7 @@ data "aws_iam_instance_profile" "ec2" {
 module "vpc" {
   source     = "../modules/vpc"
   name       = "Web_tier_VPC"
-  cidr_block = vars.cidr_block
+  cidr_block = var.cidr_block
   az         = var.az_region
   your_name  = var.user_name
 }
