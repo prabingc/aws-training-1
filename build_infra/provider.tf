@@ -1,8 +1,6 @@
 
 
-locals {
-  bucket_name = "abc"
-}
+
 terraform {
   required_providers {
     aws = {
@@ -12,7 +10,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "prabin16333-state"
+    bucket = module.vpc.bucket_name
     key    = "terraform.tfstate"
     region = "us-east-2"
   }

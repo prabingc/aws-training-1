@@ -37,3 +37,8 @@ output "sg_allow_web" {
   description = "SG id that allows all web traffic on 80 and 443"
   value       = aws_security_group.allow_web.id
 }
+
+output "bucket_name" {
+  description = "bucket name to store state file"
+  value       = aws_s3_bucket.state_bucket.id
+}
