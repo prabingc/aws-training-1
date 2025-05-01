@@ -1,10 +1,20 @@
 
+resource "random_string" "random" {
+  length  = 6
+  special = false
+}
+
 terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+  }
+  backend "s3" {
+    bucket = "prabin16333-state"
+    key    = "capstone_1-${random_string.random.result}"
+    region = "us-east-2"
   }
 }
 
