@@ -2,7 +2,7 @@ variable "project" {
   type    = string
   default = "john wick"
 }
-variable "cidr" {
+variable "cidr_block" {
   type    = string
   default = "10.10.0.0/22"
 }
