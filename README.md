@@ -24,7 +24,7 @@ yum -y install terraform
      git clone git@github.com:prabingc/aws-training-1.git
    ```
 
-   Please refer https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account for adding your ssh keys.
+   *Please refer to [link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for adding your ssh keys.*
 
 5) Run packer to build a ami with Nginx
    ```
