@@ -10,7 +10,7 @@ data "aws_ami" "golden_image" {
   most_recent = true
   filter {
     name   = "name"
-    values = ["amazon_linux_nginx"]
+    values = ["amazon_linux_nginx-*"]
   }
 }
 
