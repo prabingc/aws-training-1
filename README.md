@@ -1,4 +1,4 @@
-# aws-training-1
+# aws-training-1  (Please view this as RAW, I wasn't able to make the markup work)
 1) Launch a new instance with default Amazon Linux AMI. Use EBS volume to be at least 16GB. Under Advance details add following to 
     IAM instance profile : EC2_role
 
