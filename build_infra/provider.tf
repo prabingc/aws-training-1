@@ -8,12 +8,6 @@ terraform {
       version = "~> 5.0"
     }
   }
-
-  backend "s3" {
-    bucket = module.vpc.bucket_name
-    key    = "terraform.tfstate"
-    region = "us-east-2"
-  }
 }
 
 provider "aws" {
