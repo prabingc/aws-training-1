@@ -101,13 +101,3 @@ resource "aws_security_group" "allow_web" {
   }
   tags = local.tags
 }
-
-resource "random_string" "random" {
-  length  = 6
-  special = false
-}
-
-resource "aws_s3_bucket" "state_bucket" {
-  bucket = "capstone-lab-bucket-${random_string.random.result}"
-  acl    = "private"
-}
