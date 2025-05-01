@@ -1,3 +1,10 @@
+In this lab we are deploying a single tier web applicaiton. The resources we will be creating here is 1 public facing website backed by nginx running on a EC2 instance. EC2 instances are behind a AutoScaling which scales up and down based on CPU usage. 
+
+  Tools used: 
+      Packer to install nginx on latest Amazon AMI and create a new AMI.
+      Terraform to build all the infrastructure. 
+      
+
 # aws-training-1  (Please view this as RAW, I wasn't able to make the markup work)
 1) Launch a new instance with default Amazon Linux AMI. Use EBS volume to be at least 16GB. Under Advance details add following to 
     IAM instance profile : EC2_role
@@ -27,3 +34,7 @@ yum -y install terraform
     terraform init
     terraform plan
 
+Future improvements:
+    - Add support of 443 traffic on existing ALB.
+    - Add on this solution to modify existing single tier application to multi-tier solution (Web/App/DB). 
+    - Instead of using EC2 as backend we can use container running on Kubernetes cluster. 
