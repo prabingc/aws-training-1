@@ -121,7 +121,7 @@ module "alb" {
   security_group_egress_rules = {
     all = {
       ip_protocol = "-1"
-      cidr_ipv4   = vars.cidr_block
+      cidr_ipv4   = var.cidr_block
     }
   }
   security_group_description = "Allow http/https to ALB"
